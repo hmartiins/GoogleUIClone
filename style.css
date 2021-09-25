@@ -73,3 +73,41 @@ button {
   top: 0;
   left: 0;
 }
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 8px 0;
+}
+
+.content__logo {
+  height: 88px;
+}
+
+.content__search {
+  margin-top: 18px;
+  width: 100%;
+  max-width: 736px;
+  padding: 7px 10px 6px 20px;
+
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.87);
+
+  background: transparent;
+  border-radius: 25px;
+  border: 1px solid #dadce0;
+  outline: 0;
+}
+
+.content__offer {
+  margin-top: 24px;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+
+.content__offer a {
+  text-decoration: none;
+  color: #4285f4;
+}
