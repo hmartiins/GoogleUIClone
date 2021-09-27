@@ -94,12 +94,29 @@ button {
   height: 88px;
 }
 
-.content__search {
-  margin-top: 18px;
-  width: 100%;
-  max-width: 736px;
-  padding: 7px 10px 6px 20px;
+.content__input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
+  position: relative;
+
+  width: 100%;
+  max-width: 636px;
+}
+
+.content__search {
+  display: flex;
+  flex: 100%;
+
+  margin-top: 18px;
+  height: 44px;
+  width: 100%;
+
+  padding: 7px 78px 6px 48px;
+
+  word-wrap: break-word;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.87);
 
@@ -107,6 +124,38 @@ button {
   border-radius: 25px;
   border: 1px solid #dadce0;
   outline: 0;
+}
+
+.content__glass,
+.content__action {
+  width: 20px;
+  height: 20px;
+}
+
+.content__search:hover,
+.content__search:focus {
+  box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.25);
+}
+
+.content__glass {
+  position: absolute;
+  left: 18px;
+  bottom: 12px;
+}
+
+.content__action:first-child, :not(.content__action) + .content__action {
+  width: 20px;
+  height: 12px;
+
+  position: absolute;
+  right: 52px;
+  bottom: 16px;
+}
+
+.content__action {
+  position: absolute;
+  right: 18px;
+  bottom: 12px;
 }
 
 .content__offer {
